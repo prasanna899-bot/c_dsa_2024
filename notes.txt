@@ -293,6 +293,7 @@ Find the 2nd smallest digit in a number.
 14.Find sum of Odd placed Even digits in the number
 15.Find 2nd smallest digit in the number
 16.Accept a number from user and find her lucky digit, where the lucky digit is found by finding sum of the digits of the number until a sigle digit number is reached. Thus if the sum is not a single digit number, apply the logic of finding sum of the digits on it.
+17. Find sum of Odd placed Even digits.
 
 HOW TO SOLVE A PROBLEM
 
@@ -369,3 +370,108 @@ int main() {
 	printf("Sum of digits of %d is %d", tempNumber, sumOfDigits);
 	return 0;
 }
+---------------------------------------------
+DAY3 WEDNESDAY 06-11-2024
+
+int num = 35;
+int age = 35;
+int personAge = 35;
+
+int studentAge = 35;
+
+Object:
+int studentAge = 35;
+int minAge = 18;
+int maxAge = 80;
+string unit = "years";
+
+18
+80
+-------------------------------------------------------------
+int biscuitPrices[10];
+
+myFunction(biscuitPrices, 10);
+
+#include <stdio.h>
+int main()
+{
+    int x = -4, y = 1, z = 9;
+    if (y >= --x || x != ++z)
+    {
+        puts("Mysuru");
+    }
+    else
+    {
+        puts("Bengaluru");
+    }
+    printf("%d  %d  %d", x, y, z); // -5 1 9   -3 1 9
+}
+----------------------------------------
+#include <stdio.h>
+int main()
+{
+    int x = -4, y = 1, z = 9;
+    x++;
+    printf("%d  %d  %d \n", x, y, z); // -3 1 9
+    ++x;
+    printf("%d  %d  %d \n", x, y, z); // -2 1 9
+    y = z--;
+    printf("%d  %d  %d \n", x, y, z); // -2 9 8
+    z = ++x;
+    printf("%d  %d  %d \n", x, y, z); // -1 9 -1
+    x = y++ - ++y;
+    //  9   - 11
+    printf("%d  %d  %d \n", x, y, z); // -2 11 -1
+}
+-----------------------------------------------
+#include <stdio.h>
+int main()
+{
+    int x = 11, y = 3, z = 19;
+    if (z-- >= --x | y++ == x && z != y)
+        puts("Sarakki");
+    else
+        puts("Silk Board");
+    printf("%d  %d  %d \n", x, y, z); // 10 4 18
+}
+---------------------------------------
+#include <stdio.h>
+int main()
+{
+    int choice = 0;
+    puts("Welcome to Madurai Cafe");
+    puts("1:Banne-Dosa 2:Upma 3:Rava-idli \nYour choice? ");
+    scanf("%d", &choice);
+    switch (choice)
+    {
+    case 1:
+        puts("Your Tasty dosa Sir");
+        break;
+    case 2:
+        puts("Your yummy upma Maam");
+        break;
+    case 3:
+        puts("Your delicious idli Sir");
+        break;
+    default:
+        puts("This is not garden Sir");
+    }
+    puts("Thank you Visit again");
+    return 0;
+}
+------------------------------
+Check if a number is Prime
+Print the Prime numbers between m and n (m < n)
+Print the Nth Prime number
+
+Print the Nth term of the series: 1 2 2 3 3 5 5 7 8 11 13 13
+Odd terms:  1   2   3   5   8   13 (N/2+1)th term
+Even Terms: 2   3   5   7   11  13 n/2th term
+
+Print Fibo series of N terms
+Print Nth Fibo term
+Check if a number is Prime
+Find Nth Prime number
+
+
+   
