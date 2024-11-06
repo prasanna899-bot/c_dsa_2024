@@ -9,6 +9,7 @@ int main()
     {
         puts("V:Veg N:Nonveg, Your choice plz: ");
         foodType = getc(stdin);
+        getchar();
         foodType = tolower(foodType);
         switch (foodType)
         {
@@ -29,11 +30,7 @@ int main()
             default:
                 puts("We dont serve Grass Sir");
             }
-            puts("Do you wish to have more? 1:yes 2:No");
-            scanf("%d",&choice);
-            puts("V:Veg N:Nonveg, Your choice plz: ");
-            foodType = getc(stdin);
-            foodType = tolower(foodType);
+            break;
         case 'n':
             puts("1:Mutton-pulav 2:Chicken-chilly 3:Fish-fry. Your choice plz");
             scanf("%d", &choice);
@@ -51,10 +48,12 @@ int main()
             default:
                 puts("We dont serve Lizards Maam");
             }
+            break;
         }
         puts("Do you wish to have more? 1:Yes 2:No");
-        scanf("%d", &choice);
-    } while (choice != 1);
+        scanf("%d",&choice);
+        getchar();
+    } while (choice == 1);
     puts("Thank you Visit again");
     return 0;
 }
